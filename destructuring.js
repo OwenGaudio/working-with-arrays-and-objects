@@ -22,8 +22,7 @@ var carDetails = {
 */
 
 //Code Here
-
-
+const {color, make, model, year} = carDetails
 
 ////////// PROBLEM 2 //////////
 
@@ -35,13 +34,13 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+  const title = obj.title
+  const firstName = obj.firstName
+  const lastName = obj.lastName
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
-
 
 ////////// PROBLEM 3 //////////
 
@@ -54,7 +53,16 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function totalPopulation( obj ) {
+  //Code Here
+  const utah = obj.utah
+  const california = obj.california
+  const texas = obj.texas
+  const arizona = obj.arizona
+  // Do not edit the code below.
+  return (utah + california + texas + arizona)
+  // Do not edit the code above.
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -68,7 +76,17 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function ingredients( obj ) {
+  //Code Here
+  const carb = obj.carb
+  const fat = obj.fat
+  const protein = obj.protein
+  // Do not edit the code below.
+  let array = []
+  array.push(carb,fat,protein)
+  return array
+  // Do not edit the code above.
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +104,23 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+function largeNumbers( {first, second, third} ) {
+  //Code Here
+  if (first < second){
+    if(first < third){
+      return first
+    } else {
+      return thrid
+    }
+  } else {
+    if(second < third){
+      return second
+    } else {
+      return thrid
+    }
+  }
+  // Do not edit the code above.
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -98,5 +132,23 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function numberGroups( obj ) {
+  //Code Here
+  const a = obj.a
+  const b = obj.b
+  const c = obj.c
+  
+  if(a.length > b.length){
+    if (a.length > c.length){
+      return a
+    } else {
+      return c
+    }
+  } else {
+    if (b.length > c.length){
+      return b
+    } else {
+      return c
+    }
+  }
+}
